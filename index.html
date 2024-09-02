@@ -99,16 +99,14 @@
 
         
         /* 네번째 사각형 회전 mouseover, mouseleave*/
-        let rotate4 =0;
+        let rotate4 = 0;
         let item4Req;
 
         item4.addEventListener('mouseover', function() {
             item4Rotate();
-
         })
         item4.addEventListener('mouseleave', function() {
-            item4Rotate(item4Req);
-
+            cancelAnimationFrame(item4Req);
         })
 
         function item4Rotate() {
